@@ -1,0 +1,5 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintPath": "C:\\Users\\shubh\\AppData\\Roaming\\Python\\Python39\\Scripts\\pylint"
+}
