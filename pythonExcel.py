@@ -1,8 +1,9 @@
-import xlrd
-loc = ("OktaTest.xls")
-wb=xlrd.open_workbook(loc)
-sheet=wb.sheet_by_index(0)
-rows=sheet.nrows
-i=0
-for i in range(rows):
-    print(sheet.cell_value(i,0))
+import openpyxl
+
+wb=openpyxl.load_workbook("GetUserSheet.xlsx")
+sheet=wb.active
+cell=sheet.cell(1,1)
+cellput=sheet.cell(1,2)
+cellput.value="Writing Bitch"
+print(cell.value)
+wb.save("GetUserSheet.xlsx")
