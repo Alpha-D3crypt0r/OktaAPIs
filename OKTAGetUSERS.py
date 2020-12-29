@@ -3,7 +3,7 @@ from termcolor import colored
 from colorama import Fore
 from colorama import Style
 import xlrd
-loc = ("OktaTest.xls")
+loc = ("GetUserSheet.xls")
 wb=xlrd.open_workbook(loc)
 sheet=wb.sheet_by_index(0)
 rows=sheet.nrows
